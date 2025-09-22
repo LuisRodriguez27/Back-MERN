@@ -6,7 +6,7 @@
     "build:tsc": "tsc -p tsconfig.prod.json",
     "build:clean": "rimraf dist",
     "build": "npm run build:clean && npm run build:tsc",
-    "start": "cross-env NODE_ENV=production node dist/src/index.js",
+    "start": "cross-env NODE_ENV=production node dist/index.js",
     "dev": "cross-env NODE_ENV=dev ts-node-dev --transpile-only -- ./src/index.ts"
   },
   "keywords": [],
@@ -21,6 +21,10 @@
     "morgan": "^1.10.1"
   },
   "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/morgan": "^1.9.9",
     "cross-env": "^10.0.0",
     "rimraf": "^6.0.1",
     "ts-node-dev": "^2.0.0",
