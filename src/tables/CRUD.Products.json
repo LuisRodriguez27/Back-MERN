@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "68d0e1127bd2da04f29d7b2d"
+  },
+  "name": "Silla de coca",
+  "description": "asdasda",
+  "price": 123
+},
+{
+  "_id": {
+    "$oid": "68d0e2dc7bd2da04f29d7b2f"
+  },
+  "name": "Mesa de Banquete",
+  "description": "asdasd",
+  "price": 1212
+}]

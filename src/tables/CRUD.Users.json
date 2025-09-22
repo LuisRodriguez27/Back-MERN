@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "68d0db66977097b163783975"
+  },
+  "name": "Luis",
+  "email": "correodeluis41@gmail.com",
+  "number": "9514131644",
+  "idProducts": [
+    {
+      "$oid": "68d0e1127bd2da04f29d7b2d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d0df897bd2da04f29d7b2b"
+  },
+  "name": "Enrique",
+  "email": "enriquer271103@gmail.com",
+  "number": "14",
+  "idProducts": [
+    {
+      "$oid": "68d0e1127bd2da04f29d7b2d"
+    },
+    {
+      "$oid": "68d0e2dc7bd2da04f29d7b2f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d0e1f27bd2da04f29d7b2e"
+  },
+  "name": "Pedrito",
+  "email": "pedro@email.com",
+  "number": "123123",
+  "idProducts": [
+    {
+      "$oid": "68d0e1127bd2da04f29d7b2d"
+    },
+    {
+      "$oid": "68d0e2dc7bd2da04f29d7b2f"
+    }
+  ]
+}]
