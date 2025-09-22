@@ -14,7 +14,14 @@ const PORT = process.env.PORT || 5000;
 
 // Middlewares
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173'], // Permitir React en diferentes puertos
+  origin: [
+    'http://localhost:3000', 
+    'http://localhost:5173',
+    /^http:\/\/192\.168\.\d+\.\d+:5173$/, // Cualquier IP 192.168.x.x en puerto 5173
+    /^http:\/\/192\.168\.\d+\.\d+:3000$/, // Cualquier IP 192.168.x.x en puerto 3000
+    /^http:\/\/10\.\d+\.\d+\.\d+:5173$/,   // Cualquier IP 10.x.x.x en puerto 5173
+    /^http:\/\/172\.16\.\d+\.\d+:5173$/   // Cualquier IP 172.16.x.x en puerto 5173
+  ],
   credentials: true
 }));
 app.use(morgan('dev'));

@@ -5,7 +5,7 @@ let client: MongoClient;
 
 export const connectDB = async (): Promise<void> => {
   try {
-    const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/CRUD';
+    const mongoUri = 'mongodb://192.168.137.218:27017/CRUD';
     
     client = new MongoClient(mongoUri);
     await client.connect();
