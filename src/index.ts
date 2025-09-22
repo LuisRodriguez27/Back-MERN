@@ -10,7 +10,7 @@ import productRoutes from './routes/productRoutes';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = Number(process.env.PORT) || 5000;
 
 // Middlewares
 app.use(cors({
@@ -54,7 +54,9 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
   res.status(500).json({ message: 'Error interno del servidor' });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
-  console.log(`📱 API disponible en: http://localhost:${PORT}`);
+  console.log(`📱 API disponible localmente en: http://localhost:${PORT}`);
+  console.log(`🌐 API accesible desde la red en: http://0.0.0.0:${PORT}`);
+  console.log(`🔗 Para acceder desde otros dispositivos usa: http://192.168.137.218:${PORT}`);
 });
